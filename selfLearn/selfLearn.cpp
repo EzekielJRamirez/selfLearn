@@ -1,11 +1,24 @@
 // selfLearn.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
+/*
+* Multiline comment notatoion looks like this
+*/
 #include <iostream>
 
 int main()
 {
     std::cout << "Hello World!\n";
+
+    std::cout << "     /|\n";
+    std::cout << "    / |\n";
+    std::cout << "   /  |\n";
+    std::cout << "  /   |\n";
+    std::cout << " /    |\n";
+    std::cout << "/_____|\n";
+
+    std::cout << "////////////////////////////////////////\n\n";
+    std::cout << "////////////////////////////////////////\n";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
