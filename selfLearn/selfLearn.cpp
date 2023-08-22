@@ -1,10 +1,45 @@
 // selfLearn.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// follow tutorial here https://www.youtube.com/watch?v=vLnPwxZdW4Y
 
 /*
 * Multiline comment notatoion looks like this
 */
 #include <iostream>
+
+class HelperClass {
+public:
+    void m1() {
+        hh();
+        std::cout << "I am practicing my method calls\n";
+    }
+
+    void m2() {
+        hh();
+        std::cout << "Can I really get away with being lazy in the code here???\n";
+    }
+
+    /*
+    * VARIABLES
+    *   int
+    *   double
+    *   float
+    *   
+    * STRING
+    *   char
+    *   other string functions
+    * 
+    */
+    void m3() {
+        hh();
+        // experiment with variables and strings
+    }
+
+    void hh() {
+        std::cout << "\n\n";
+        std::cout << "//////////////////////////////////////////\n";
+        std::cout << "//////////////////////////////////////////\n";
+    }
+};
 
 int main()
 {
@@ -17,8 +52,10 @@ int main()
     std::cout << " /    |\n";
     std::cout << "/_____|\n";
 
-    std::cout << "////////////////////////////////////////\n\n";
-    std::cout << "////////////////////////////////////////\n";
+    HelperClass h1;
+    h1.m1();
+    h1.m2();
+    h1.m3();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
