@@ -2,6 +2,9 @@
 // follow tutorial here https://www.youtube.com/watch?v=vLnPwxZdW4Y
 // eventually I will replace the std:: with not std::, use the search function and hit replace with BLANK
 
+// TODO 
+// add more comments to clarify code!
+
 #include <iostream>
 #include <string>
 #include <cmath>
@@ -97,7 +100,7 @@ public:
 // here starts the rest of the normal code, it uses functions rather than a separate class
 
 void metHelper() {
-    std::cout << "\n\n-----------------------------------------------------";
+    std::cout << "\n\n-----------------------------------------------------\n";
 }
 
 // hello function
@@ -126,7 +129,6 @@ void buildArray() {
     int serialNum[] = { 2, 22, 31, 0 };
     std::cout << "\n" << serialNum[0];
 }
-
 
 void callMeMe() {
     std::cout << "hello Line\n";
@@ -178,10 +180,23 @@ int main()
     //sayHi();
     //gameFact("zeek");
 
-    std::cout << "\n" << retPractice();
+    std::cout << retPractice();
     buildArray();
 
     //callMe();
+
+
+    metHelper();
+    bool isReady = true;
+    if (isReady) {
+        std::cout << "You are ready\n";
+    }
+    else {
+        std::cout << "You were not ready\n";
+    }
+
+    //TODO
+    // make a switch case
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
