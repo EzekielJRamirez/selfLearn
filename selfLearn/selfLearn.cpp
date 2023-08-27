@@ -1,5 +1,6 @@
 // selfLearn.cpp : This file contains the 'main' function. Program execution begins and ends there.
 // follow tutorial here https://www.youtube.com/watch?v=vLnPwxZdW4Y
+// eventually I will replace the std:: with not std::, use the search function and hit replace with BLANK
 
 #include <iostream>
 #include <string>
@@ -92,8 +93,16 @@ public:
     }
 };
 
+////////////////////////////////////////////////////////
+// here starts the rest of the normal code, it uses functions rather than a separate class
+
+void metHelper() {
+    std::cout << "\n\n-----------------------------------------------------";
+}
+
 // hello function
 void sayHi() {
+    metHelper();
     std::cout << "hello function";
 }
 
@@ -106,7 +115,47 @@ void gameFact(std::string Name) {
 }
 
 std::string retPractice() {
+    metHelper();
     return "Thenith";
+}
+
+// you can not return an array in c++
+// :(
+void buildArray() {
+    metHelper();
+    int serialNum[] = { 2, 22, 31, 0 };
+    std::cout << "\n" << serialNum[0];
+}
+
+
+void callMeMe() {
+    std::cout << "hello Line\n";
+    std::cout << "hello Line\n";
+    std::cout << "hello Line\n";
+    std::cout << "hello Line\n";
+    std::cout << "hello Line\n";
+    std::cout << "hello Line\n";
+    std::cout << "hello Line\n";
+    std::cout << "hello Line\n";
+    std::cout << "hello Line\n";
+    std::cout << "hello Line\n";
+}
+
+// using a technique to get many lines to appear on the screen with only 20 lines of code
+// this can be done with fewer lines and even with out the other method by using a loop!!!
+void callMe() {
+    metHelper();
+    // call the next method
+    callMeMe();
+    callMeMe();
+    callMeMe();
+    callMeMe();
+    callMeMe();
+    callMeMe();
+    callMeMe();
+    callMeMe();
+    callMeMe();
+    callMeMe();
 }
 
 int main()
@@ -130,6 +179,9 @@ int main()
     //gameFact("zeek");
 
     std::cout << "\n" << retPractice();
+    buildArray();
+
+    //callMe();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
